@@ -10,8 +10,8 @@ export type MultiInput = any;
 
 // node stuff here
 export interface Node {
-  input: any;
-  output: any;
+  input: Input;
+  output: Input;
 }
 
 export interface CanvasControls {

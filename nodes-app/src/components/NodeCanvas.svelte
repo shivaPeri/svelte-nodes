@@ -1,11 +1,14 @@
 <script lang="ts">
   import { onMount, afterUpdate } from "svelte";
-  import { defaultCanvasControls } from "../constants";
+  import Node from "./Node.svelte";
+  import { defaultCanvasControls, defaultNode } from "../constants";
   import { CanvasControls } from "../interfaces";
 
   export let controls: CanvasControls = defaultCanvasControls;
   export let width: number = 800;
   export let height: number = 600;
+
+  export let nodeData: any = [defaultNode];
 
   let w;
   let h;
@@ -26,7 +29,11 @@
     </g>
 
     <!-- main nodes content -->
-    <g class="content" />
+    <g class="content">
+      {#each nodeData as props, i}
+        <Node {props} />
+      {/each}
+    </g>
 
     <!-- mini zoom viewer -->
     <g class="viewfinder" />

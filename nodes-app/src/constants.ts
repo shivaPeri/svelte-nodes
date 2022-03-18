@@ -1,6 +1,11 @@
-import type { CanvasControls } from "./interfaces";
+import type { CanvasControls, Node } from "./interfaces";
 
 export const defaultCanvasControls: CanvasControls = {
   zoomable: true,
   editable: true,
+};
+
+export const defaultNode: Node = {
+  input: boolean,
+  output: boolean,
 };

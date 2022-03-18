@@ -1,9 +1,9 @@
 <script lang="ts">
   import Card from "./Card.svelte";
 
-  export let nodeControls: Node;
+  export let props: Node;
 </script>
 
 <Card>
-  {nodeControls}
+  {props}
 </Card>
