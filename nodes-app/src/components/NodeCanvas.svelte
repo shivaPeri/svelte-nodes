@@ -1,8 +1,9 @@
 <script lang="ts">
   import { onMount, afterUpdate } from "svelte";
+  import { defaultCanvasControls } from "../constants";
   import { CanvasControls } from "../interfaces";
 
-  export let controls: CanvasControls;
+  export let controls: CanvasControls = defaultCanvasControls;
   export let width: number = 800;
   export let height: number = 600;
 
