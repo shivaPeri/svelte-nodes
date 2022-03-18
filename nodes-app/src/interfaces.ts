@@ -13,3 +13,8 @@ export interface Node {
   input: any;
   output: any;
 }
+
+export interface CanvasControls {
+  zoomable: boolean;
+  editable: boolean;
+}
