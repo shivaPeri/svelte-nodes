@@ -6,6 +6,6 @@ export const defaultCanvasControls: CanvasControls = {
 };
 
 export const defaultNode: Node = {
-  input: boolean,
-  output: boolean,
+  input: true,
+  output: true,
 };

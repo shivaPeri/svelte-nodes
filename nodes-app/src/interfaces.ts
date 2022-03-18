@@ -14,6 +14,11 @@ export interface Node {
   output: Input;
 }
 
+// todo: revisit
+export interface Edge {
+  types;
+}
+
 export interface CanvasControls {
   zoomable: boolean;
   editable: boolean;

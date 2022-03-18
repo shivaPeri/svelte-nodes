@@ -8,7 +8,8 @@
   export let width: number = 800;
   export let height: number = 600;
 
-  export let nodeData: any = [defaultNode];
+  //   export let nodeData: any = [defaultNode];
+  export let nodeData: any = ["stuff", "here"];
 
   let w;
   let h;
