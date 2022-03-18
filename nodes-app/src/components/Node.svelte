@@ -1,5 +1,9 @@
 <script lang="ts">
   import Card from "./Card.svelte";
+
+  export let nodeControls: Node;
 </script>
 
-<Card>TODO: add content CONTENT</Card>
+<Card>
+  {nodeControls}
+</Card>
