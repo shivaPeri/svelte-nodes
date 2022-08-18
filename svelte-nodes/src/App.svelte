@@ -8,11 +8,11 @@
 
   <div style="width: 1000px; height: 1000px;">
     <NodeCanvas>
-      <Node x={100} y={100}>
+      <Node node={{ coord: { x: 100, y: 100 } }}>
         <h3>test</h3>
       </Node>
 
-      <Node x={150} y={100}>
+      <Node x={150} y={200}>
         <h3>test2</h3>
         <div>
           hello word this is Lorem ipsum dolor sit amet consectetur adipisicing

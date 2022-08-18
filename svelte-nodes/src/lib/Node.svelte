@@ -1,10 +1,11 @@
 <script lang="ts">
-  export let x;
-  export let y;
+  import type { NodeInterface } from "./interface";
+
+  export let node: NodeInterface;
 </script>
 
-<g {x} {y}>
-  <foreignObject {x} {y} width={100} height={200}>
+<g x={node.coord.x} y={node.coord.y}>
+  <foreignObject width={"100%"} height={"100%"}>
     <slot />
   </foreignObject>
 </g>
